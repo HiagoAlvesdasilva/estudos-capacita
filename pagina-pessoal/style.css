@@ -50,3 +50,23 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
+
+.container {
+    display: flex;
+}
+
+.caixa {
+    border: solid red;
+}
+
+.caixa2 {
+    border: solid green;
+}
+
+.caixa3 {
+    border: solid orange;
+}
+
+.caixa4 {
+    border: solid blue;
+}
