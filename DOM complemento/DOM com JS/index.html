@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS iniciante</title>
+</head>
+<body>
+    <div id="div-inicio">
+        <h1>Manipulação DOM usando JavaScript</h1>
+        <p id="texto">Texto que será alterado</p>
+        <img id="imagem" src="https://fastly.picsum.photos/id/416/200/300.jpg?hmac=KIMUiPYQ0X2OQBuJIwtfL9ci1AGeu2OqrBH4GqpE7Bc" alt="">
+        </div>
+
+    <div>
+        <button id="botaoAlteraTexto" onclick="alterarTexto()">Alterar o texto</button>
+        <button id="botaoAlteraCorTexto" onclick="alterarCorDoTexto()">Alterar cor do texto</button>
+        <button id="botaoAlteraImagem" onclick="alterarImagem()">Clique aqui para mudar a imagem</button>
+    </div>
+    <script>
+        function alterarTexto(){
+            document.getElementById("texto").innerHTML = "Texto alterado com sucesso!";
+        }
+
+        function alterarCorDoTexto(){
+            document.getElementById("texto").style.color = "blue";
+            document.getElementById("texto").style.backgroundColor = "yellow";
+        }
+
+        function alterarImagem(){
+            document.getElementById("imagem").src = "https://fastly.picsum.photos/id/318/200/300.jpg?hmac=WEC_ft7NGxXgRDHWhj1tz7_gmAOrnI9d5IiS98juw8I";
+        }
+    </script>
+
+</body>
+</html>
